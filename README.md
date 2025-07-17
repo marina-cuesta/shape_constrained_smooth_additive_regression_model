@@ -5,7 +5,7 @@ This repository provides a Python implementation to fit shape-constrained smooth
 - Exact interpolation at specified data points,
 - Pointwise underestimation or overestimation,
 - Pointwise lower and upper bounds on the estimated function,
-- Global lower and upper bounds on the estimated function across the entire observed `X` domain, enforced using polynomial non-negativity conditions as described in Bertsimas and Popescu (2002).
+- Global lower and upper bounds on the estimated function across the entire observed `X` domain, enforced using polynomial nonnegativity conditions as described in Bertsimas and Popescu (2002).
 
 This repository is associated with the following paper:
 
