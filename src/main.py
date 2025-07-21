@@ -52,7 +52,7 @@ def run_dataset(folder, data_name, n_data, y_vars, X_vars_dict, n_intervals_dict
 
     ## fitting a smooth additive regression model to each response variable in y_vars
     start_time = time.perf_counter()
-    hat_y_dict = models_fitting_and_txt_result(
+    hat_y_dict, hat_theta = models_fitting_and_txt_result(
         folder=folder,
         data_name=data_name_read,
         data=data,

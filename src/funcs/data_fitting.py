@@ -144,7 +144,7 @@ def models_fitting_and_txt_result(folder,data_name, data,
     ## creating and saving the txt file
     save_fitted_models_polycoeffs_txt(filename, X_vars_dict,bdegs_dict, knots_dict,alphas_dict, poly_coeffs_dict)
 
-    return hat_y_dict
+    return hat_y_dict, hat_theta
 
 
 
