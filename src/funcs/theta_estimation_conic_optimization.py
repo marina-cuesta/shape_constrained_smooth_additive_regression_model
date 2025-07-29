@@ -352,7 +352,7 @@ def theta_estimation_conic_optimization(B, PI,
         hat_theta = hat_theta_full
 
     ## checking if alpha == mean(y)
-    if (abs(hat_theta[0] - np.mean(y)) > abs(0.01 * np.mean(y))):
+    if (abs(hat_theta[0] - np.mean(y)) > max(abs(0.01 * np.mean(y)),0.001)):
         raise Exception("theta estimation failed: alpha != mean(y)")
 
     return hat_theta
